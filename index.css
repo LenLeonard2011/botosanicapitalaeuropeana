@@ -1,0 +1,142 @@
+body {
+    background-color: #003399;
+    font-family: sans-serif;
+    height: 120vh;
+}
+
+img {
+    width: 100%; 
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+.spacer {
+    height: 100px;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+
+.navbar-button {
+    flex: 0.15; /* This ensures all buttons take equal space */
+    margin: 0 5px; /* Optional: Adds some space between buttons */
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.header-lista {
+    position: absolute;
+    top: 90%;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust centering */
+    text-align: justify;
+    width: 100%; /* Limit the width but don't force it */
+    color: white; 
+}
+
+.antet {
+    position: absolute;
+    top: 5%;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust centering */
+    text-align: center;
+    width: 95%; /* Limit the width but don't force it */
+    padding-top: 70%;
+    color: white;
+}
+
+.titlu {
+    font-size: 6vw; /* Use viewport width for responsive scaling */
+}
+
+.lista {
+    font-size: 3vw; /* Use viewport width for responsive scaling */
+    width: 85%; /* Limit the width but don't force it */
+    position: absolute;
+    top: 115%;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust centering */
+    color: white;
+    text-align: justify;
+}
+
+.paragraf {
+    padding-top: 8%;
+    font-size: 3.5vw; /* Use viewport width for responsive scaling */
+    width: 50%;
+}
+
+.element-lista {
+    font-size: 4vw; /* Use viewport width for responsive scaling */
+    padding-top: 15%;
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+    .titlu {
+        font-size: 8vw; /* Adjust font size for medium screens */
+    }
+
+    .paragraf {
+        font-size: 5vw;
+    }
+
+    .element-lista {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .titlu {
+        font-size: 10vw; /* Further adjustment for smaller screens */
+    }
+
+    .paragraf {
+        font-size: 6vw;
+    }
+
+    .element-lista {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .titlu {
+        font-size: 12vw; /* Adjust font size for smallest screens */
+    }
+
+    .paragraf {
+        font-size: 7vw;
+    }
+
+    .element-lista {
+        font-size: 7vw;
+    }
+
+    .antet, .lista {
+        padding: 0 5%; /* Reduce padding on smaller screens to fit content better */
+    }
+}
